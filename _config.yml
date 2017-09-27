@@ -1,3 +1,4 @@
 name: Chimdimma Noelyn Onah, Post Graduate Researcher
 markdown: kramdown
 theme: jekyll-theme-hacker
+permalink: /blog/:year/:month/:day/:title
