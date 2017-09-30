@@ -4,8 +4,7 @@ layout: default
 title: Noelyn's Blog
 ---
 	<h2>{{ page.title }}</h2>
-        <p>I would endeavour to document my journey as a PhD student and all that comes with it. </p>
-	<ul class="posts">
+        <ul class="posts">
 
 	  {% for post in site.posts %}
 	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
