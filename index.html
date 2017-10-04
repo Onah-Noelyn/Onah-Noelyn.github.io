@@ -16,14 +16,24 @@ title: Chimdimma Noelyn Onah
         <p>The first year of my studies entail a masters programme in which I am doing a Programming for Social Scientist's course. This is done using Python and my first task is to build an agent based model. </p>
 	<p>This model is geared to create a fixed set of agents, these agents are able to interact with each other and their environment and this interaction is as seen in the plot below. </p>
 	
-	<div style="text-align-center;">
+	<div style="text-align:center">
 		<button onclick="playPause()">Play/Pause</button> 
-	        <video width="430" height="240" control>
+	        <video id="animation" width="430" height="240" control>
 			<source src="ABM_animation.mp4" type="video/mp4">
 			<source src="ABM_animation.ogg" type="video/ogg">
                         Your browser does not support the video tag.
                 </video>
 	</div>
+	<script> 
+        var agents = document.getElementById("animation"); 
+        function playPause() { 
+        	if (agents.paused) 
+        	    agents.play(); 
+        	else 
+        	    agents.pause(); 
+       	} 
+	</script>	
+
 	<p>The code I have written for this can be found in my <a href="https://github.com/Onah-Noelyn/Agent_Based_Model">github repositary</a> </p>
 	<p>You can learn more about what am doing on github and contact me using the details below. </p>
 	</div>
