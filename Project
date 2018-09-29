@@ -1,0 +1,52 @@
+---
+
+layout: default
+
+title: Project
+
+---
+<h2>September 27, 2017 </h2> 
+
+	<p>The first year of my studies entail a masters programme in which I am doing a Programming for Social Scientist's course. This is done using Python and my first task is to build an agent based model. </p>
+
+	<p>This model is geared to create an environment of agents, these agents are able to interact with each other and the environment. This interaction involves agents moving, eating, sharing and storing away the environment. This is shown in the below animation through the observable change in colour. Press play to see.</p>
+
+	
+
+	<div style="text-align:center";"background-color: white";>
+
+		<button onclick="playPause()">Play</button> 
+
+	        <video id="animation" width="750" height="440" control>
+
+			<source src="ABM_animation.mp4" type="video/mp4">
+
+			<source src="ABM_animation.ogg" type="video/ogg">
+
+                        Your browser does not support the video tag.
+
+                </video>
+
+	</div>
+
+	<script> 
+
+        var agents = document.getElementById("animation"); 
+
+        function playPause() { 
+
+        	if (agents.paused) 
+
+        	    agents.play(); 
+
+        	else 
+
+        	    agents.pause(); 
+
+       	} 
+
+	</script>	
+
+
+
+	<p>The code written for this can be found in my <a href="https://github.com/Onah-Noelyn/Agent_Based_Model">github repositary</a> </p>
